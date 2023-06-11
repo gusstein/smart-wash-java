@@ -1,10 +1,10 @@
 package com.example.smartwashjava.controller;
 
+import com.example.smartwashjava.model.Servico;
 import lombok.AllArgsConstructor;
 import com.example.smartwashjava.model.Agendamento;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 import com.example.smartwashjava.repository.AgendamentoRepository;
 
 import java.util.List;
@@ -22,4 +22,9 @@ public class AgendamentoController {
         return agendamentoRepository.findAll();
     }
 
+    @PostMapping
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public Agendamento create(@RequestBody Agendamento agendamento) {
+        return agendamentoRepository.save(agendamento);
+    }
 }

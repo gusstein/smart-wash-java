@@ -3,9 +3,9 @@ package com.example.smartwashjava.controller;
 import com.example.smartwashjava.model.Servico;
 import com.example.smartwashjava.repository.ServicoRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,8 +18,15 @@ public class ServicoController {
 
     //@RequestMapping(method = RequestMapping.GET)
     @GetMapping
-    public List<Servico> list() {
+    public @ResponseBody List<Servico> list() {
         return servicoRepository.findAll();
     }
+
+    @PostMapping
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public Servico create(@RequestBody Servico servico) {
+        return servicoRepository.save(servico);
+    }
+
 
 }
