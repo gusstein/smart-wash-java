@@ -64,21 +64,54 @@ public class SmartWashJavaApplication {
 			veiculoRepository.save(veiculo4);
 
 			// Criando objetos fictícios para serviços
-//			Servico servico1 = new Servico();
-//			servico1.setNome("Lavagem");
-//			servico1.setPreco(50L);
-//			servico1.setDescricao("Lavagem externa e interna do veículo");
-//			servico1.setDuracao("60");
-//			servico1.setAvaliacao(4L);
-//			servicoRepository.save(servico1);
-//
-//			Servico servico2 = new Servico();
-//			servico2.setNome("Polimento");
-//			servico2.setPreco(100L);
-//			servico2.setDescricao("Polimento da pintura do veículo");
-//			servico2.setDuracao("40");
-//			servico2.setAvaliacao(5L);
-//			servicoRepository.save(servico2);
+			Servico servico1 = new Servico();
+			servico1.setNome("Lavagem");
+			servico1.setPreco(50L);
+			servico1.setDescricao("Lavagem externa e interna do veículo");
+			servico1.setDuracao("60");
+			servico1.setAvaliacao(4L);
+			servicoRepository.save(servico1);
+
+			Servico servico2 = new Servico();
+			servico2.setNome("Polimento");
+			servico2.setPreco(100L);
+			servico2.setDescricao("Polimento da pintura do veículo");
+			servico2.setDuracao("40");
+			servico2.setAvaliacao(5L);
+			servicoRepository.save(servico2);
+
+			Servico servico3 = new Servico();
+			servico3.setNome("Troca de óleo");
+			servico3.setPreco(80L);
+			servico3.setDescricao("Troca de óleo e filtro do veículo");
+			servico3.setDuracao("30");
+			servico3.setAvaliacao(4L);
+			servicoRepository.save(servico3);
+
+			Servico servico4 = new Servico();
+			servico4.setNome("Alinhamento e balanceamento");
+			servico4.setPreco(120L);
+			servico4.setDescricao("Alinhamento e balanceamento das rodas do veículo");
+			servico4.setDuracao("45");
+			servico4.setAvaliacao(4L);
+			servicoRepository.save(servico4);
+
+			Servico servico5 = new Servico();
+			servico5.setNome("Revisão completa");
+			servico5.setPreco(200L);
+			servico5.setDescricao("Revisão completa do veículo, incluindo troca de óleo, filtros, fluidos, etc.");
+			servico5.setDuracao("120");
+			servico5.setAvaliacao(5L);
+			servicoRepository.save(servico5);
+
+			Servico servico6 = new Servico();
+			servico6.setNome("Instalação de som automotivo");
+			servico6.setPreco(150L);
+			servico6.setDescricao("Instalação de sistema de som automotivo no veículo");
+			servico6.setDuracao("60");
+			servico6.setAvaliacao(4L);
+			servicoRepository.save(servico6);
+
 
 			// Criando lista de veículos e adicionando os objetos criados
 //			List<Veiculo> veiculos = new ArrayList<>();

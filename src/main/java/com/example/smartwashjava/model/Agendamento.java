@@ -14,11 +14,11 @@ public class Agendamento {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JsonProperty("_id")
     private Long id;
-    @OneToMany
+    @ManyToMany
     private List<Veiculo> veiculos;
-    @OneToMany
+    @ManyToMany
     private List<Servico> servicos;
-    @OneToMany
+    @ManyToMany
     private List<Funcionario> funcionarios;
     private Long preco;
     private Date dataEntrada;
