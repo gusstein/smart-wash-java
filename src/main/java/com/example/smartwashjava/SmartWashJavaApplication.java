@@ -47,22 +47,38 @@ public class SmartWashJavaApplication {
 			veiculo2.setCarroceria("Sedan");
 			veiculoRepository.save(veiculo2);
 
-			// Criando objetos fictícios para serviços
-			Servico servico1 = new Servico();
-			servico1.setNome("Lavagem");
-			servico1.setPreco(50L);
-			servico1.setDescricao("Lavagem externa e interna do veículo");
-			servico1.setDuracao("60");
-			servico1.setAvaliacao(4L);
-			servicoRepository.save(servico1);
+			Veiculo veiculo3 = new Veiculo();
+			veiculo3.setModelo("Uno");
+			veiculo3.setMarca("Fiat");
+			veiculo3.setAno("2019");
+			veiculo3.setPlaca("XYZ789");
+			veiculo3.setCarroceria("Hatchback");
+			veiculoRepository.save(veiculo3);
 
-			Servico servico2 = new Servico();
-			servico2.setNome("Polimento");
-			servico2.setPreco(100L);
-			servico2.setDescricao("Polimento da pintura do veículo");
-			servico2.setDuracao("40");
-			servico2.setAvaliacao(5L);
-			servicoRepository.save(servico2);
+			Veiculo veiculo4 = new Veiculo();
+			veiculo4.setModelo("Gtr");
+			veiculo4.setMarca("Nissan");
+			veiculo4.setAno("2002");
+			veiculo4.setPlaca("XY5489");
+			veiculo4.setCarroceria("Sedan");
+			veiculoRepository.save(veiculo4);
+
+			// Criando objetos fictícios para serviços
+//			Servico servico1 = new Servico();
+//			servico1.setNome("Lavagem");
+//			servico1.setPreco(50L);
+//			servico1.setDescricao("Lavagem externa e interna do veículo");
+//			servico1.setDuracao("60");
+//			servico1.setAvaliacao(4L);
+//			servicoRepository.save(servico1);
+//
+//			Servico servico2 = new Servico();
+//			servico2.setNome("Polimento");
+//			servico2.setPreco(100L);
+//			servico2.setDescricao("Polimento da pintura do veículo");
+//			servico2.setDuracao("40");
+//			servico2.setAvaliacao(5L);
+//			servicoRepository.save(servico2);
 
 			// Criando lista de veículos e adicionando os objetos criados
 //			List<Veiculo> veiculos = new ArrayList<>();
