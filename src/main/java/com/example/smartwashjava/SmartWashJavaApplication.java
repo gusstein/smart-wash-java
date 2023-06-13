@@ -30,7 +30,6 @@ public class SmartWashJavaApplication {
 			agendamentoRepository.deleteAll();
 			clienteRepository.deleteAll();
 
-			// Criando objetos fictícios para serviços de estética automotiva
 			Servico servico1 = new Servico();
 			servico1.setNome("Limpeza");
 			servico1.setPreco(50L);
@@ -79,9 +78,6 @@ public class SmartWashJavaApplication {
 			servico6.setAvaliacao(4L);
 			servicoRepository.save(servico6);
 
-
-
-
 			// Criando lista de veículos e adicionando os objetos criados
 //			List<Veiculo> veiculos = new ArrayList<>();
 //			veiculos.add(veiculo1);
@@ -101,7 +97,6 @@ public class SmartWashJavaApplication {
 //			agendamento.setDataEntrada(new Date());
 //			agendamento.setDataSaida(new Date());
 //			agendamentoRepository.save(agendamento);
-
 		};
 	}
 

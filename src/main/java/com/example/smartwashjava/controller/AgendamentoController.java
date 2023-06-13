@@ -16,7 +16,6 @@ public class AgendamentoController {
 
     private final AgendamentoRepository agendamentoRepository;
 
-    //@RequestMapping(method = RequestMapping.GET)
     @GetMapping
     public List<Agendamento> list() {
         return agendamentoRepository.findAll();
