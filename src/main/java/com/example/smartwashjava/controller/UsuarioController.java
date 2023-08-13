@@ -1,5 +1,6 @@
 package com.example.smartwashjava.controller;
 
+import com.example.smartwashjava.holder.UsuarioHolder;
 import com.example.smartwashjava.model.Usuario;
 import com.example.smartwashjava.repository.UsuarioRepository;
 import lombok.AllArgsConstructor;
@@ -29,16 +30,15 @@ public class UsuarioController {
 
     @PostMapping("/login")
     @ResponseStatus(code = HttpStatus.OK)
-    public String login(@RequestBody Usuario usuario) {
+    public Usuario login(@RequestBody Usuario usuario) {
         List<Usuario> usuarios = list();
 
         for (Usuario u : usuarios) {
             if (u.getEmail().equals(usuario.getEmail()) && u.getSenha().equals(usuario.getSenha())) {
-                return "1";
+                return u;
             }
         }
-
-        return "2";
+        return new Usuario();
     }
 
     @PostMapping("/registrar")

@@ -18,8 +18,10 @@ public class Usuario {
     private String cpf;
     private String email;
     private String senha;
+    private Boolean empresa;
 
     public Usuario() {
+        super();
     }
 }
 

@@ -84,6 +84,7 @@ public class SmartWashJavaApplication {
 			usuario.setSenha("123");
 			usuario.setNome("gustavo");
 			usuario.setEmail("123");
+			usuario.setEmpresa(true);
 			usuarioRepository.save(usuario);
 
 			// Criando lista de veículos e adicionando os objetos criados
