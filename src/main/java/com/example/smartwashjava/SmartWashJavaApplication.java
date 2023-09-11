@@ -80,18 +80,31 @@ public class SmartWashJavaApplication {
 
 			Usuario usuario = new Usuario();
 			usuario.setCpf("123456789");
-			usuario.setId(2L);
+			usuario.setId(0L);
 			usuario.setSenha("123");
 			usuario.setNome("gustavo");
-			usuario.setEmail("123");
+			usuario.setEmail("proprietario");
 			usuario.setEmpresa(true);
 			usuarioRepository.save(usuario);
 
-			// Criando lista de veículos e adicionando os objetos criados
-//			List<Veiculo> veiculos = new ArrayList<>();
-//			veiculos.add(veiculo1);
-//			veiculos.add(veiculo2);
-//
+			Usuario usuar = new Usuario();
+			usuar.setCpf("123456789");
+			usuar.setId(0L);
+			usuar.setSenha("123");
+			usuar.setNome("gustavoStein");
+			usuar.setEmail("cliente");
+			usuar.setEmpresa(false);
+			usuarioRepository.save(usuar);
+
+			Veiculo veiculo = new Veiculo();
+			veiculo.setAno("2022");
+			veiculo.setModelo("F-28");
+			veiculo.setMarca("Ferrari");
+			veiculo.setCarroceria("Coupé");
+			veiculo.setPlaca("ABC-1234");
+			veiculoRepository.save(veiculo);
+
+
 //			// Criando lista de serviços e adicionando os objetos criados
 //			List<Servico> servicos = new ArrayList<>();
 //			servicos.add(servico1);
