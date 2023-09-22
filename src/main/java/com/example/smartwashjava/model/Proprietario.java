@@ -12,7 +12,7 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
-public class Funcionario extends Usuario {
+public class Proprietario extends Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -23,6 +23,6 @@ public class Funcionario extends Usuario {
     private Long faltasDia;
     private Long folga;
 
-    public Funcionario() {
+    public Proprietario() {
     }
 }

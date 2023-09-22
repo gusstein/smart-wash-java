@@ -1,6 +1,6 @@
 package com.example.smartwashjava.controller;
 
-import com.example.smartwashjava.model.Funcionario;
+import com.example.smartwashjava.model.Proprietario;
 import com.example.smartwashjava.repository.FuncionarioRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class FuncionarioController {
 
     //@RequestMapping(method = RequestMapping.GET)
     @GetMapping
-    public @ResponseBody List<Funcionario> list() {
+    public @ResponseBody List<Proprietario> list() {
         return funcionarioRepository.findAll();
     }
 
